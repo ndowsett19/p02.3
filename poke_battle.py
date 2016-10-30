@@ -41,3 +41,32 @@ def run_tests():
 # Edit this code
 def battle(name1, power1, name2, power2):
 
+    if name1 == "Mewtwo" and name2 == "Mewtwo":
+        print("Draw")
+        
+    elif name1 == "Mewtwo":
+        power1 = power1+100
+        if power1 > power2:
+            print(name1)
+        elif power1 < power2:
+            print(name2)
+        else:
+            print("Draw")
+
+    elif name2 == "Mewtwo":
+        power2 = power2+100
+        if power1 > power2:
+            print(name1)
+        elif power1 < power2:
+            print(name2)
+        else:
+            print("Draw")
+
+    else:
+        if power1 > power2:
+            print(name1)
+        elif power1 < power2:
+            print(name2)
+        else:
+            print("Draw")
+
